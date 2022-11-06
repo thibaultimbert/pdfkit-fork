@@ -2,7 +2,7 @@ var fs = require('fs');
 var PDFDocument = require('../');
 
 var doc = new PDFDocument({ bufferPages: true });
-doc.pipe(fs.createWriteStream('text-link.pdf'));
+doc.pipe(fs.createWriteStream('text-link-modified.pdf'));
 doc.addPage();
 doc.addPage();
 doc.switchToPage(0);
